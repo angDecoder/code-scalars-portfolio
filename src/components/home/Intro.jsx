@@ -14,11 +14,11 @@ function Intro() {
     <>
       <div className="bg-gradient-to-b from-bgDarkMute to-bgDark  text-content flex flex-col justify-between  items-center p-8">
         <h1 className="font-medium md:text-6xl sm:text-4xl text-3xl text-center ">
-          LET ME{" "}
+          LET US{" "}
           <span className="text-contentHighlight font-carattere tracking-widest font-semibold md:text-7xl text-4xl ">
             introduce
           </span>{" "}
-          MYSELF
+          OURSELF
         </h1>
 
         <motion.div
@@ -39,10 +39,6 @@ function Intro() {
                 Code Scalars
               </span>
               , a team of seasoned software developers from Banglore. 💻 By day, we're dedicated professionals at the forefront of technology, and by night, we collaborate to develop innovative solutions across various platforms.
-
-
-
-Beyond mobile and web, we also have experience in desktop application development, crafting robust software for varied use cases. As a team, we bring a versatile skill set and a passion for tackling complex challenges, always striving to push the boundaries of what's possible.
             </motion.p>
 
             {/* <span className="text-contentHighlight font-medium">
@@ -50,24 +46,57 @@ Beyond mobile and web, we also have experience in desktop application developmen
               </span>{" "} */}
 
             <motion.p variants={textVariants}>
-              Our team is skilled in a diverse range of technologies. We specialize in AI integration, creating intelligent systems that enhance user experiences. We excel in full-stack development, building end-to-end solutions for web applications. Our expertise extends to mobile development, with proficiency in both Android and iOS platforms, as well as cross-platform frameworks that enable seamless deployment across multiple devices.
+              Our team is skilled in a diverse range of technologies. We specialize in 
+              {" "}
+              <span className="text-contentHighlight font-medium whitespace-nowrap">
+                AI integration
+              </span>
+              , creating intelligent systems that enhance user experiences. We excel in 
+
+              {" "}
+              <span className="text-contentHighlight font-medium whitespace-nowrap">
+                Full-stack development
+              </span>
+              , building end-to-end solutions for web applications. Our expertise extends to 
+              {" "}
+              <span className="text-contentHighlight font-medium whitespace-nowrap">
+              Mobile development
+              </span>
+              , with proficiency in both 
+              {" "}
+              <span className="text-contentHighlight font-medium whitespace-nowrap">
+              Android
+              </span>
+              {" "}
+               and 
+               {" "}
+              <span className="text-contentHighlight font-medium whitespace-nowrap">
+              iOS platforms
+              </span>
+               , as well as cross-platform frameworks that enable seamless deployment across multiple devices.
             </motion.p>
             <motion.p variants={textVariants}>
-              My field of Interest's are building new Web Technologies and
-              Products and also in areas related to{" "}
-              <span className="text-contentHighlight font-medium">
-                Blockchain & DevOps
+              In addition to our expertise in mobile and web technologies, we also develop 
+              {" "}
+              <span className="text-contentHighlight font-medium whitespace-nowrap">
+              desktop applications
               </span>
-              .
+              {" "}
+              , ensuring our software solutions are adaptable to a wide range of needs. Our skills also cover 
+              {" "}
+              <span className="text-contentHighlight font-medium whitespace-nowrap">
+                DevOps
+              </span>
+              , where we focus on efficient deployment and maintaining robust systems. As a team, we possess a diverse skill set and a passion for solving complex problems, consistently pushing the envelope to achieve more.
             </motion.p>
-            <div className="flex justify-center">
+            {/* <div className="flex justify-center">
               <Link
                 to={'/resume'}
                 className=" flex gap-2 px-6  items-center transition ease-in-out delay-150 bg-buttonMain hover:-translate-y hover:scale-110 hover:bg-buttonHover shadow-md hover:shadow-buttonMain duration-500  font-semibold p-2 rounded-lg  text-center sm:tracking-widest"
               >
                 <FaFileAlt />Check Out My CV
               </Link>
-            </div>
+            </div> */}
 
           </div>
         </motion.div>
