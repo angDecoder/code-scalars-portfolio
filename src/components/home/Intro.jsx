@@ -12,87 +12,81 @@ function Intro() {
   return (
     // Used in Home page
     <>
-      <div className="bg-gradient-to-b from-bgDarkMute to-bgDark  text-content flex flex-col justify-between  items-center p-8">
-        <h1 className="font-medium md:text-6xl sm:text-4xl text-3xl text-center ">
+      <div className="flex flex-col justify-between items-center bg-gradient-to-b from-bgDarkMute to-bgDark p-8 text-content">
+        <h1 className="font-medium text-3xl text-center sm:text-4xl md:text-6xl">
           LET US{" "}
-          <span className="text-contentHighlight font-carattere tracking-widest font-semibold md:text-7xl text-4xl ">
+          <span className="font-carattere font-semibold text-4xl text-contentHighlight md:text-7xl tracking-widest">
             introduce
           </span>{" "}
           OURSELF
         </h1>
 
         <motion.div
-          className="flex lg:flex-row flex-col-reverse items-center justify-between "
+          className="flex lg:flex-row flex-col-reverse justify-center items-center"
           variants={textVariants}
           initial="initial"
           whileInView="animate"
         >
-          <Lottie className="lg:w-1/2  w-4/5" animationData={avtarAnimation} />
-          <div className="flex flex-col text-justify justify-center gap-7 lg:w-1/2 md:w-4/5 md:text-xl text-lg pt-8 lg:pb-8">
+          <Lottie className="w-4/5 lg:w-2/5" animationData={avtarAnimation} />
+          <div className="flex flex-col justify-center gap-7 pt-8 lg:pb-8 md:w-4/5 lg:w-1/2 text-justify text-lg md:text-xl">
             <motion.p variants={textVariants}>
               Hey there!{" "}
               <span className="wave" role="img" aria-labelledby="wave">
                 👋
               </span>{" "}
               I'm{" "}
-              <span className="text-contentHighlight text-2xl font-semibold font-carattere tracking-widest">
+              <span className="font-carattere font-semibold text-2xl text-contentHighlight tracking-widest">
                 Code Scalars
               </span>
               , a team of seasoned software developers from Banglore. 💻 By day, we're dedicated professionals at the forefront of technology, and by night, we collaborate to develop innovative solutions across various platforms.
             </motion.p>
 
-            {/* <span className="text-contentHighlight font-medium">
+            {/* <span className="font-medium text-contentHighlight">
                 React.js, Next.js, Redux and TailwindCSS{" "}
               </span>{" "} */}
 
             <motion.p variants={textVariants}>
               Our team is skilled in a diverse range of technologies. We specialize in 
               {" "}
-              <span className="text-contentHighlight font-medium whitespace-nowrap">
+              <span className="font-medium text-contentHighlight whitespace-nowrap">
                 AI integration
               </span>
               , creating intelligent systems that enhance user experiences. We excel in 
 
               {" "}
-              <span className="text-contentHighlight font-medium whitespace-nowrap">
+              <span className="font-medium text-contentHighlight whitespace-nowrap">
                 Full-stack development
               </span>
               , building end-to-end solutions for web applications. Our expertise extends to 
               {" "}
-              <span className="text-contentHighlight font-medium whitespace-nowrap">
+              <span className="font-medium text-contentHighlight whitespace-nowrap">
               Mobile development
               </span>
               , with proficiency in both 
               {" "}
-              <span className="text-contentHighlight font-medium whitespace-nowrap">
+              <span className="font-medium text-contentHighlight whitespace-nowrap">
               Android
               </span>
               {" "}
                and 
                {" "}
-              <span className="text-contentHighlight font-medium whitespace-nowrap">
+              <span className="font-medium text-contentHighlight whitespace-nowrap">
               iOS platforms
               </span>
                , as well as cross-platform frameworks that enable seamless deployment across multiple devices.
             </motion.p>
             <motion.p variants={textVariants}>
-              In addition to our expertise in mobile and web technologies, we also develop 
+              Our expertise extends to 
               {" "}
-              <span className="text-contentHighlight font-medium whitespace-nowrap">
-              desktop applications
+              <span className="font-medium text-contentHighlight whitespace-nowrap">
+              DevOps &nbsp;
               </span>
-              {" "}
-              , ensuring our software solutions are adaptable to a wide range of needs. Our skills also cover 
-              {" "}
-              <span className="text-contentHighlight font-medium whitespace-nowrap">
-                DevOps
-              </span>
-              , where we focus on efficient deployment and maintaining robust systems. As a team, we possess a diverse skill set and a passion for solving complex problems, consistently pushing the envelope to achieve more.
+              for efficient deployment and robust system maintenance. As a team, we have a iverse skill set and a passion for solving complex problems, always striving to go beyond expectations.
             </motion.p>
             {/* <div className="flex justify-center">
               <Link
                 to={'/resume'}
-                className=" flex gap-2 px-6  items-center transition ease-in-out delay-150 bg-buttonMain hover:-translate-y hover:scale-110 hover:bg-buttonHover shadow-md hover:shadow-buttonMain duration-500  font-semibold p-2 rounded-lg  text-center sm:tracking-widest"
+                className="flex items-center gap-2 bg-buttonMain hover:bg-buttonHover shadow-md hover:shadow-buttonMain px-6 p-2 rounded-lg font-semibold text-center sm:tracking-widest transition hover:-translate-y duration-500 delay-150 ease-in-out hover:scale-110"
               >
                 <FaFileAlt />Check Out My CV
               </Link>
@@ -103,15 +97,15 @@ function Intro() {
 
       </div>
 
-      <div className="bg-gradient-to-b from-bgDark to-bgDarkMute text-content flex flex-col md:gap-12 gap-8 pb-8 md:px-16 px-4 ">
+      <div className="flex flex-col gap-8 md:gap-12 bg-gradient-to-b from-bgDark to-bgDarkMute px-4 md:px-16 pb-8 text-content">
         <motion.h1
-          className="font-medium md:text-6xl text-3xl text-center"
+          className="font-medium text-3xl text-center md:text-6xl"
           variants={textVariants}
           initial="initial"
           whileInView="animate"
         >
           Area of {" "}
-          <span className="text-contentHighlight font-carattere tracking-widest font-semibold md:text-7xl text-4xl ">
+          <span className="font-carattere font-semibold text-4xl text-contentHighlight md:text-7xl tracking-widest">
             Expertise
           </span>
         </motion.h1>
@@ -135,7 +129,7 @@ function Intro() {
         <div className="flex justify-center">
           <Link
             to={'/projects'}
-            className=" flex gap-2 px-6  items-center transition ease-in-out delay-150 bg-buttonMain hover:-translate-y hover:scale-110 hover:bg-buttonHover shadow-md hover:shadow-buttonMain duration-500  font-semibold p-2 rounded-lg  text-center sm:tracking-widest"
+            className="flex items-center gap-2 bg-buttonMain hover:bg-buttonHover shadow-md hover:shadow-buttonMain px-6 p-2 rounded-lg font-semibold text-center sm:tracking-widest transition hover:-translate-y duration-500 delay-150 ease-in-out hover:scale-110"
           >
             <FaLaptopCode />Take a Look at My Projects
           </Link>
